@@ -29,13 +29,13 @@ if ($b == $c) {
     echo "$b is equal (in value) to $c\n";
 }
 
-if ($b !== $c) {
+if ($b === $c) {
     // TODO: Replace the blanks with the correct description
-    echo "$b is not equal (in value and type) to $c\n";
+    echo "$b is identical (in value and type) to $c\n";
 }
 
 // TODO: Replace `true` with the correct comparison
-if ($b !== $c) {
+if ($b != $c) {
     echo "$b is not equal to $c\n";
 }
 
