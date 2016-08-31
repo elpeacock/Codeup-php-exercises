@@ -26,9 +26,11 @@ $books = [
 $message = "";
 
 foreach ($books as $book => $bookInfo) {
-    $message .= "{$book}:" . PHP_EOL;
-    foreach($bookInfo as $key => $value){
-        $message .= "   {$key}: {$value}" . PHP_EOL;
+    if ($bookInfo['published'] >= 1950){
+        $message .= "{$book}:" . PHP_EOL;
+        foreach($bookInfo as $key => $value){
+            $message .= "   {$key}: {$value}" . PHP_EOL;
+        }
     }
 };
 
