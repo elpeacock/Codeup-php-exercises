@@ -10,5 +10,5 @@ $increment = trim(fgets(STDIN));
 
 echo 'incrementing' . PHP_EOL;
 for ($i = $start; $i <= $end; $i += $increment){
-	echo "$i" . PHP_EOL;
+    echo "$i" . PHP_EOL;
 };
