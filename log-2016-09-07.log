@@ -1,0 +1,10 @@
+2016-09-07 16:08:59 This is an info message.2016-09-07 16:08:59 This is an error message.2016-09-07 16:17:07 INFOThis is an info message.
+2016-09-07 16:17:07 ERRORThis is an error message.
+2016-09-07 16:17:55 INFO: This is an info message.
+2016-09-07 16:17:55 ERROR: This is an error message.
+2016-09-07 16:23:50 INFO: This is an info message.
+2016-09-07 16:23:50 ERROR: ERROR
+2016-09-07 16:24:30 INFO: This is an info message.
+2016-09-07 16:24:30 ERROR: This is an error message.
+2016-09-07 16:29:28 UTC INFO: This is an info message.
+2016-09-07 16:29:28 UTC ERROR: This is an error message.
