@@ -22,4 +22,4 @@ function logError($message) {
 }
 
 logInfo("You did something and it worked.");
-logError("Nope, you fucked it up.");
+logError("things are fucked up.");
