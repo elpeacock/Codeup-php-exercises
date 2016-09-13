@@ -30,13 +30,14 @@ function importSalesReport($filename)
     foreach ($salesReport as $key => $seller) {
         $seller = explode(', ', $seller);
         $person = [];
+        $person['units sold'] = $seller[3];
         $person['employee number'] = $seller[0];
         $person['first name'] = $seller[1];
         $person['last name'] = $seller[2];
-        $person['units sold'] = $seller[3];
         array_push($monthlySales, $person);
         $unitsSold += $person['units sold'];
     }
+    arsort($monthlySales);
 
     $numberOfEmployees = (count($monthlySales));
     $averageUnits = $unitsSold/$numberOfEmployees;
@@ -47,13 +48,14 @@ function importSalesReport($filename)
     Average Units sold per employee: {$averageUnits}.
 ============================Monthly Employee Production===========================
 PRINTME;
+    echo "$results" . PHP_EOL;
     
     foreach ($monthlySales as $person) {
-        foreach ($person['units sold'] as $value) {
-            var_dump($value);
-        }
-    }
-    echo "$results" . PHP_EOL;
+        echo "{$person['first name']} " . "{$person['last name']}, " . "employee ID #{$person['employee number']}, " . "sold {$person['units sold']} unit(s)." . PHP_EOL;
+    };
+
+
+
 
 }
 importSalesReport($data);
