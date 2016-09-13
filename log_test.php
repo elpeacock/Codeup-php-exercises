@@ -6,14 +6,13 @@ date_default_timezone_set('America/Chicago');
 require_once 'Log.php';
 
 //create an instance of Log class
-$logger = new Log();
+$logger = new Log('cli');
 
-//make today accessible
-$today = date('Y-m-d');
+// //make today accessible
+// $today = date('Y-m-d');
 
-//set filename property
-$logger->filename = "log-{$today}.log";
-
+// //set filename property
+// $logger->filename = "log-{$today}.log";
 
 $logger->info("You did something and it worked.");
 $logger->error("things are fucked up.");
