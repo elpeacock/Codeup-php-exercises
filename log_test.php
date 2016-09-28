@@ -15,5 +15,5 @@ $logger = new Log('cli');
 // $logger->filename = "log-{$today}.log";
 
 $logger->info("You did something and it worked.");
-$logger->error("things are fucked up.");
+$logger->error("things are f#$%ed up.");
 
