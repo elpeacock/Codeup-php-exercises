@@ -45,11 +45,11 @@ $companies = [
     ]
 ];
 
-// --------------------------part 1 - output companies array in current form--------------------------------
+// --------------------------part 1 - output companies array in current form --------------------------------
 
 print_r($companies) . PHP_EOL;
 
-//---------------------------part 2 - sort by company name--------------------------------
+//---------------------------part 2 - sort by company name --------------------------------
 
 ksort($companies);
 
