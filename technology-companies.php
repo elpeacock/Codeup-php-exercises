@@ -45,32 +45,31 @@ $companies = [
     ]
 ];
 
-// --------------------------part 1--------------------------------
+// --------------------------part 1 - output companies array in current form--------------------------------
 
 print_r($companies) . PHP_EOL;
 
-//---------------------------part 2--------------------------------
+//---------------------------part 2 - sort by company name--------------------------------
 
 ksort($companies);
 
 print_r($companies) . PHP_EOL;
 
-//---------------------------part 4---------------------------------
+
+//----------------------------part 3 - sort founders alphabetically -------------------------------
+$msg = "";
+foreach($companies as $company => $people) {
+    asort($people);
+    $msg .= "{$company} was founded by: " . PHP_EOL;
+    foreach($people as $person) {
+        $msg .= "   {$person}" . PHP_EOL;
+    }
+}
+echo $msg;
+
+//---------------------------part 4 - sort companies from largest to smallest ---------------------------------
 
 arsort($companies);
 
 print_r($companies) . PHP_EOL;
-
-//----------------------------part 3-------------------------------
-
-foreach($companies as $company => $people) {
-    asort($people);
-    $companies[$company] = $people;
-    $msg .= "{$company} was founded by: " . PHP_EOL;
-    foreach($people as $person) {
-        $msg .= "   {$person}" . PHP_EOL;
-        echo $msg;
-    }
-};
-
 
